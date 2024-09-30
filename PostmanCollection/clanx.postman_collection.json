@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "ea321cfc-b18b-4ad8-a3aa-8f02a1b7175b",
+		"name": "clanx",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8656723"
+	},
+	"item": [
+		{
+			"name": "addTrade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"stockSymbol\": \"RELIANCE\",\r\n  \"type\": \"BUY\",\r\n  \"quantity\": 100,\r\n  \"price\": 900,\r\n  \"date\": \"2015-04-10\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/addTrade",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addTrade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTrade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tradeId\": \"66fad36b4508a56b84526502\",  // The ID of the trade to update\r\n  \"stockSymbol\": \"RELIANCE\",\r\n  \"type\": \"BUY\",\r\n  \"quantity\": 150,\r\n  \"price\": 1000,\r\n  \"date\": \"2015-04-15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/updateTrade",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateTrade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "portfolio",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/portfolio",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"portfolio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "holdings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/holdings",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"holdings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "returns",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/returns",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"returns"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeTrade",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tradeId\":\"66fad3264508a56b845264ff\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/removeTrade",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"removeTrade"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
