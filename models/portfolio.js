@@ -1,8 +1,11 @@
+// models/portfolio.js
 const mongoose = require('mongoose');
-const tradeSchema = require('./trade'); // Import the Trade model
+const connection = require('../config/db'); // Import the connection pool
 
 const portfolioSchema = new mongoose.Schema({
     trades: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Trade' }]
-});
+}, { strictPopulate: false });
 
-module.exports = mongoose.model('Portfolio', portfolioSchema);
+const Portfolio = connection.model('Portfolio', portfolioSchema);
+
+module.exports = Portfolio;

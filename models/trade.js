@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const connection = require('../config/db'); // Import the connection pool
 const tradeSchema = new mongoose.Schema({
     stock: { type: mongoose.Schema.Types.ObjectId, ref: 'Stock' },
     type: { type: String, enum: ['BUY', 'SELL'] },
@@ -6,4 +7,6 @@ const tradeSchema = new mongoose.Schema({
     price: Number,
     date: Date
 });
-module.exports = mongoose.model('Trade', tradeSchema);
+const Trade = connection.model('Trade', tradeSchema);
+
+module.exports = Trade;

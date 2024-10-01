@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"stockSymbol\": \"RELIANCE\",\r\n  \"type\": \"BUY\",\r\n  \"quantity\": 100,\r\n  \"price\": 900,\r\n  \"date\": \"2015-04-10\"\r\n}\r\n",
+					"raw": "{\r\n  \"stockSymbol\": \"ABC\",\r\n  \"type\": \"BUY\",\r\n  \"quantity\": 100,\r\n  \"price\": 900,\r\n  \"date\": \"2015-04-10\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,12 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/addTrade",
+					"raw": "localhost:3000/portfolio/addTrade",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
+						"portfolio",
 						"addTrade"
 					]
 				}
@@ -40,7 +41,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"tradeId\": \"66fad36b4508a56b84526502\",  // The ID of the trade to update\r\n  \"stockSymbol\": \"RELIANCE\",\r\n  \"type\": \"BUY\",\r\n  \"quantity\": 150,\r\n  \"price\": 1000,\r\n  \"date\": \"2015-04-15\"\r\n}",
+					"raw": "{\r\n  \"tradeId\": \"66fc2b6c9200cdfa2dabcaea\",  // The ID of the trade to update\r\n  \"stockSymbol\": \"RELIANCE\",\r\n  \"type\": \"BUY\",\r\n  \"quantity\": 150,\r\n  \"price\": 1000,\r\n  \"date\": \"2015-04-15\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -48,12 +49,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/updateTrade",
+					"raw": "localhost:3000/portfolio/updateTrade",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
+						"portfolio",
 						"updateTrade"
 					]
 				}
@@ -108,12 +110,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/holdings",
+					"raw": "localhost:3000/portfolio/holdings",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
+						"portfolio",
 						"holdings"
 					]
 				}
@@ -138,12 +141,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/returns",
+					"raw": "localhost:3000/portfolio/returns",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
+						"portfolio",
 						"returns"
 					]
 				}
@@ -157,7 +161,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"tradeId\":\"66fad3264508a56b845264ff\"\r\n}",
+					"raw": "{\r\n    \"tradeId\":\"66fc30a72df6e727a773ea79\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -165,12 +169,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/removeTrade",
+					"raw": "localhost:3000/portfolio/removeTrade",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
+						"portfolio",
 						"removeTrade"
 					]
 				}
