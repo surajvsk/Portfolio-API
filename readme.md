@@ -1,5 +1,3 @@
-Here’s a **README.md** file template for your Portfolio Tracking API project:
-
 ---
 
 # Portfolio Tracking API
